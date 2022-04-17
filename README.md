@@ -62,7 +62,9 @@ This prompts you to pick a quorum variant, whether you would like to try Privacy
 default artifact files are stored at `./metachian-quorum-network`, change directory to the artifacts folder: 
 
 ```
-$> cd metachain-quorum-network
+$ cd metachain-quorum-network
+$ cd network 
+$ ./run.sh (start the network) 
 ``` 
 
 
@@ -93,4 +95,4 @@ the container's user 1000 to your local user id so permissions will work like so
 image: some:img
 user: $(id -u):$(id -g)
 ```
-# Metachain-Quorum-Quickstart 
+
