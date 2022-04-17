@@ -1,4 +1,4 @@
-# Quorum Dev Quickstart
+# Metachain-Quorum Quickstart
 
 
 ## Table of Contents
@@ -7,7 +7,7 @@
 
 ## Prerequisites
 
-To run these tutorials, you must have the following installed:
+To run these tools, you must have the following installed:
 
 - [Docker and Docker-compose](https://docs.docker.com/compose/install/)
 
@@ -29,27 +29,9 @@ To run these tutorials, you must have the following installed:
 Create the docker-compose file and artifacts with 
 
 ```
-$> npx quorum-dev-quickstart
-              ___
-             / _ \   _   _    ___    _ __   _   _   _ __ ___
-            | | | | | | | |  / _ \  | '__| | | | | | '_ ' _ \
-            | |_| | | |_| | | (_) | | |    | |_| | | | | | | |
-             \__\_\  \__,_|  \___/  |_|     \__,_| |_| |_| |_|
-     
-        ____                          _
-       |  _ \    ___  __   __   ___  | |   ___    _ __     ___   _ __
-       | | | |  / _ \ \ \ / /  / _ \ | |  / _ \  | '_ \   / _ \ | '__|
-       | |_| | |  __/  \ V /  |  __/ | | | (_) | | |_) | |  __/ | |
-       |____/   \___|   \_/    \___| |_|  \___/  | .__/   \___| |_|
-                                                 |_|
-       ___            _          _            _                    _
-      / _ \   _   _  (_)   ___  | | __  ___  | |_    __ _   _ __  | |_
-     | | | | | | | | | |  / __| | |/ / / __| | __|  / _' | | '__| | __|
-     | |_| | | |_| | | | | (__  |   <  \__ \ | |_  | (_| | | |    | |_ 
-      \__\_\  \__,_| |_|  \___| |_|\_\ |___/  \__|  \__,_| |_|     \__|
+$> npx metachain-quorum-quickstart
 
-
-Welcome to the Quorum Developer Quickstart utility. This tool can be used
+Welcome to the Metachain-Quorum Developer Quickstart utility. This tool can be used
 to rapidly generate local Quorum blockchain networks for development purposes
 using tools like GoQuorum, Besu, and Codefi Orchestrate.
 
@@ -77,17 +59,17 @@ not yet exist. Default: ./quorum-test-network
 ```
 
 This prompts you to pick a quorum variant, whether you would like to try Privacy and the location for the artifacts. By 
-default artifact files are stored at `./quorum-test-network`, change directory to the artifacts folder: 
+default artifact files are stored at `./metachian-quorum-network`, change directory to the artifacts folder: 
 
 ```
-$> cd quorum-test-network
+$> cd metachain-quorum-network
 ``` 
 
 
 Alternatively, you can use cli options and skip the prompt above like so:
 
 ```
-npx quorum-dev-quickstart --clientType besu --outputPath ./quorum-test-network --monitoring default --privacy true --orchestrate false --quorumKeyManager false
+npx metachain-quorum-quickstart --clientType besu --outputPath ./quorum-test-network --monitoring default --privacy true --orchestrate false --quorumKeyManager false
 ```
 
 The arguments ```--privacy``` and ```--clientType``` are required, the others contain defaults if left blank.
@@ -111,3 +93,4 @@ the container's user 1000 to your local user id so permissions will work like so
 image: some:img
 user: $(id -u):$(id -g)
 ```
+# Metachain-Quorum-Quickstart 

@@ -1,11 +1,11 @@
 {
-  "name": "quorum-dev-quickstart",
+  "name": "metachain-quorum-quickstart",
   "version": "0.0.58",
   "lockfileVersion": 2,
   "requires": true,
   "packages": {
     "": {
-      "name": "quorum-dev-quickstart",
+      "name": "metachain-quorum-quickstart",
       "version": "0.0.58",
       "license": "Apache-2.0",
       "dependencies": {
@@ -23,7 +23,7 @@
         "yargs": "^17.2.1"
       },
       "bin": {
-        "quorum-dev-quickstart": "index.js"
+        "metachain-quorum-quickstart": "index.js"
       },
       "devDependencies": {
         "@types/express": "^4.17.7",
